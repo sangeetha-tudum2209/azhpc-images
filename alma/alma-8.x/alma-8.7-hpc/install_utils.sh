@@ -9,4 +9,9 @@ cp ./microsoft-prod.repo /etc/yum.repos.d/
 
 yum repolist
 
+# Install Kernel dependencies
+dnf install -y https://repo.almalinux.org/vault/8.7/BaseOS/x86_64/os/Packages/kernel-devel-$KERNEL.rpm \
+    https://repo.almalinux.org/vault/8.7/BaseOS/x86_64/os/Packages/kernel-headers-$KERNEL.rpm \
+    https://repo.almalinux.org/vault/8.7/BaseOS/x86_64/os/Packages/kernel-modules-extra-$KERNEL.rpm
+
 ../common/install_utils.sh

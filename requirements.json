@@ -52,8 +52,8 @@
             "sha256": "59d318ea9814797f9196d16af06d7d1324114ea63015762b527478d8aec7d25e"
         },
         "almalinux8.8": {
-            "version": "23.07-0.5.1.2",
-            "sha256": "59d318ea9814797f9196d16af06d7d1324114ea63015762b527478d8aec7d25e"
+            "version": "23.10-1.1.9.0",
+            "sha256": "cee2a87a9b51611dd8b96d84fdb5db53fad3f838f5b6648b47dbf16d50c5e1d9"
         }
     },
     "hpcx": {
