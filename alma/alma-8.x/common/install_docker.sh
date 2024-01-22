@@ -10,6 +10,7 @@ yum install -y moby-cli
 # Setting up NVIDIA Container Toolkit
 case ${DISTRIBUTION} in
     "almalinux8.7") distribution="rhel8.7";
+    "almalinux8.8") distribution="rhel8.8";
         ;;
     *) ;;
 esac

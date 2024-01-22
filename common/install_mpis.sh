@@ -123,7 +123,7 @@ cat << EOF >> $module_files_directory/mvapich2-$mvapich2_version
 #
 conflict        mpi
 
-if { "$DISTRIBUTION" == "almalinux8.7" } {
+if { [[ "$DISTRIBUTION" == "almalinux"* ]] } {
     setenv gcc_version $gcc_version
     module load gcc-$gcc_version
 }
@@ -146,7 +146,7 @@ cat << EOF >> $module_files_directory/openmpi-$ompi_version
 #
 conflict        mpi
 
-if { "$DISTRIBUTION" == "almalinux8.7" } {
+if { [[ "$DISTRIBUTION" == "almalinux"* ]] } {
     setenv gcc_version $gcc_version
     module load gcc-$gcc_version
 }

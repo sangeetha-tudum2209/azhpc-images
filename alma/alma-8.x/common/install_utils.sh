@@ -1,11 +1,6 @@
 #!/bin/bash
 set -ex
 
-# Install Kernel dependencies
-dnf install -y https://repo.almalinux.org/vault/8.7/BaseOS/x86_64/os/Packages/kernel-devel-$KERNEL.rpm \
-    https://repo.almalinux.org/vault/8.7/BaseOS/x86_64/os/Packages/kernel-headers-$KERNEL.rpm \
-    https://repo.almalinux.org/vault/8.7/BaseOS/x86_64/os/Packages/kernel-modules-extra-$KERNEL.rpm
-
 # Install Python 3.8
 dnf install -y python3.8
 ln -fs /usr/bin/python3.8 /usr/bin/python3

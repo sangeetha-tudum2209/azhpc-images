@@ -35,5 +35,5 @@ nvidia_driver_sha256=$(jq -r '.sha256' <<< $nvidia_driver_metadata)
 nvidia_driver_download_url=https://us.download.nvidia.com/tesla/$nvidia_driver_version/NVIDIA-Linux-x86_64-$nvidia_driver_version.run
 $COMMON_DIR/download_and_verify.sh $nvidia_driver_download_url $nvidia_driver_sha256
 bash NVIDIA-Linux-x86_64-$nvidia_driver_version.run --silent --dkms
-if [[ $DISTRIBUTION == "almalinux8.7" ]]; then dkms install --no-depmod -m nvidia -v $nvidia_driver_version -k $KERNEL --force; fi
+if [[ $DISTRIBUTION == "almalinux"* ]]; then dkms install --no-depmod -m nvidia -v $nvidia_driver_version -k $KERNEL --force; fi
 $COMMON_DIR/write_component_version.sh "nvidia" $nvidia_driver_version
