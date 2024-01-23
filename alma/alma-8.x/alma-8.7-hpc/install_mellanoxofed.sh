@@ -6,9 +6,8 @@ mofed_version=$(jq -r '.version' <<< $mofed_metadata)
 mofed_sha256=$(jq -r '.sha256' <<< $mofed_metadata)
 
 case ${DISTRIBUTION} in
-    "almalinux8.7") distribution="rhel8.7";
-    "almalinux8.8") distribution="rhel8.8";
-        ;;
+    "almalinux8.7") distribution="rhel8.7";;
+    "almalinux8.8") distribution="rhel8.8";;
     *) ;;
 esac
 
