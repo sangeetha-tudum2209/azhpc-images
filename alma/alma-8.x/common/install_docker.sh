@@ -8,13 +8,7 @@ yum install -y moby-cli
 # Install NVIDIA Docker
 # Reference: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
 # Setting up NVIDIA Container Toolkit
-case ${DISTRIBUTION} in
-    "almalinux8.7") distribution="rhel8.7";;
-    "almalinux8.8") distribution="rhel8.8";;
-    *) ;;
-esac
-
-curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.repo | tee /etc/yum.repos.d/nvidia-docker.repo
+curl -s -L https://nvidia.github.io/libnvidia-container/stable/rpm/nvidia-container-toolkit.repo | sudo tee /etc/yum.repos.d/nvidia-container-toolkit.repo
 # MIG Capability on A100
 # curl -s -L https://nvidia.github.io/nvidia-container-runtime/experimental/$distribution/nvidia-container-runtime.list | tee /etc/yum.repos.d/nvidia-container-runtime.list
 
