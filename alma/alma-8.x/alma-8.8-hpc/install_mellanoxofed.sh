@@ -4,7 +4,7 @@ set -ex
 mofed_metadata=$(jq -r '.mofed."'"$DISTRIBUTION"'"' <<< $COMPONENT_VERSIONS)
 mofed_version=$(jq -r '.version' <<< $mofed_metadata)
 mofed_sha256=$(jq -r '.sha256' <<< $mofed_metadata)
-tarball="MLNX_OFED_LINUX-$mofed_version-rhel8.7-x86_64.tgz"
+tarball="MLNX_OFED_LINUX-$mofed_version-rhel8.8-x86_64.tgz"
 mofed_download_url=https://content.mellanox.com/ofed/MLNX_OFED-$mofed_version/$tarball
 mofed_folder=$(basename $mofed_download_url .tgz)
 
