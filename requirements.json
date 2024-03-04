@@ -40,16 +40,16 @@
     },
     "mofed": {
         "ubuntu20.04": {
-            "version": "23.07-0.5.1.2",
-            "sha256": "923ddbd48d250b25ba50098ad8852ad6a591df3e975f3e0b9922b752181bdd12"
+            "version": "24.01-0.3.3.1",
+            "sha256": "72e4b2961b73989793304eda9320ba3cdcdb226ea12fe1a7b8e7a179ea516e22"
         },
         "ubuntu22.04": {
-            "version": "23.07-0.5.1.2",
-            "sha256": "77e032a48de4c040b2f2dd3bf2edd11921de7caff59c773ac35208514f72eff5"
+            "version": "24.01-0.3.3.1",
+            "sha256": "caa74c295ec88afd1f1c950b4bd6e32c609e3c5185199c7e344bf492ccef6429"
         },
         "almalinux8.7": {
-            "version": "23.07-0.5.1.2",
-            "sha256": "59d318ea9814797f9196d16af06d7d1324114ea63015762b527478d8aec7d25e"
+            "version": "24.01-0.3.3.1",
+            "sha256": "34e826fea03d6505b50909959ed029282a6238c75830fbe5b2bc15442cf8f8b5"
         }
     },
     "hpcx": {
