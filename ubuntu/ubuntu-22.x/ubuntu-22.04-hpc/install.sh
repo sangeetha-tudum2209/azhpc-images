@@ -17,7 +17,7 @@ spack env activate $HPC_ENV
 ./install_utils.sh
 
 # install Lustre client
-$UBUNTU_COMMON_DIR/install_lustre_client.sh
+#$UBUNTU_COMMON_DIR/install_lustre_client.sh
 
 # install mellanox ofed
 ./install_mellanoxofed.sh
