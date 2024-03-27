@@ -87,7 +87,7 @@ MVAPICH2X_INSTALLATION_DIRECTORY="/opt/mvapich2-x"
 IMPI2018_PATH="/opt/intel/compilers_and_libraries_2018.5.274"
 
 MOFED_VERSION_ALMA_87="MLNX_OFED_LINUX-24.01-0.3.3.1"
-HPCX_OMB_PATH_ALMA_87="/opt/hpcx-v2.18-gcc-mlnx_ofed-redhat8-cuda12-x86_64/modulefiles/hpcx"
+HPCX_OMB_PATH_ALMA_87="/usr/share/Modules/modulefiles/hpcx-v2.18-gcc-mlnx_ofed-redhat8-cuda12-x86_64/ompi/tests/osu-micro-benchmarks"
 MODULE_FILES_ROOT_ALMA="/usr/share/Modules/modulefiles"
 IMPI2021_PATH_ALMA_87="/opt/intel/oneapi/mpi/${IMPI_2021_VERSION_ALMA_87}"
 MVAPICH2_PATH_ALMA="/opt/mvapich2-${MVAPICH2_VERSION_ALMA}/libexec"
